@@ -1,0 +1,3042 @@
+<!DOCTYPE html>
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Example Search - Kanshudo</title>
+  <meta charset="UTF-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"23e93f0784","applicationID":"5958078","transactionName":"dlZaRhEKW10AR0sWBVJcRx0QAFZDBl0Q","queueTime":2,"applicationTime":101,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"23e93f0784",applicationID:"5958078"};;/*! For license information please see nr-loader-rum-1.252.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const x=(0,n.mF)().o;var E=r(385),D=r(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,k);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.252.0",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([g,e,r,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var h=r(2825);const v=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:w,loader_config:_,runtime:x={loaderType:b},exposed:E=!0}=t;const D=(0,g.gG)();w||(A=D.init,w=D.info,_=D.loader_config),(0,i.Dg)(e.agentIdentifier,A||{}),(0,i.GE)(e.agentIdentifier,_||{}),w.jsAttributes??={},d.v6&&(w.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,w);const k=(0,i.P_)(e.agentIdentifier),j=[w.beacon,w.errorBeacon];m||(k.proxy.assets&&(v(k.proxy.assets),j.push(k.proxy.assets)),k.proxy.beacon&&j.push(k.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...k.ajax.deny_list||[],...k.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),w(v,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=w(v,e,!0,"api")})),g.addPageAction=w(v,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=w(v,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(m+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],r),e}finally{h.emit("fn-end",[(0,s.z)()],r)}}}};function w(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function _(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{A[e]=w(m,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=E),m=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.252.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-85KXSsv643MTRPulZfmcwj8IKIbJeT9JfNpsSBckCZNUr+o/ILbmpOISx04Ol69WzHRZplUy/y2FaJ3KUChaTw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.0.PROD"]=self["webpackChunk:NRBA-1.252.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,957));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,v.D)(e,w)}function w(e,t){return t}var _=i(8632),x=i(4402),E=i(4351);var D=i(5546),k=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,k.N)((()=>(0,D.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,D.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[p,T,P],loaderType:"lite"})})()})();</script>
+  <meta name="theme-color" content="#09396f">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kanshudo is the fastest and most enjoyable way to learn Japanese kanji and written Japanese. Whatever your current level, Kanshudo will help you improve. Kanshudo provides free Japanese lessons, free online flashcards, games, and a unique visualization of your kanji knowledge, the Kanji Wheel.">
+  <meta name="keywords" content="learn kanji,learn japanese kanji,learn japanese kanji online,learn japanese,learn written japanese,japanese grammar,learn japanese grammar,written japanese,mastery japanese,master kanji,master japanese kanji,easy way to learn japanese kanji,learn japan language,how to learn kanji,japan language,learn japanese online free,learning japanese kanji online" />
+  
+  <link rel="stylesheet" href="/assets/application-5c957bcc3790a363d328c3965191d0369e3680a074df72ffb1c7fb292468830a.css" media="all" />
+  <link rel="stylesheet" href="/assets/kanshudo-font-6ebccb80b1b696e17c3b24e35e8e957ccdc8d99d1b8609e205c5acaf890e82ca.css" media="all" />
+  <script src="/assets/application-cd6bc532b5bfde6850f73a99c4ccd8ce4067a58c4720535e33611c376f4aff55.js"></script>
+  <script src="/assets/modernizr-13e953cf204d6f1b3e32311a26aa37af656231087ac12ee2432947ac31eb7c5d.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HqXAr+N7IN1fP/W906vD8h5rbReVGoOPZxjFHdkwRGSCeKhhEXVcufv0ungCQ9FLvXVmvhMwn+9uTlp2F8NnWw==" />
+
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Kanshudo search" />
+  <link rel=”apple-touch-icon” href=”/apple-touch-icon.png”/>
+  <link rel=”apple-touch-icon-precomposed” href=”/apple-touch-icon.png”/>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="facebook-domain-verification" content="s8teyqn8fa4vnp7mrttz7ltv2r5z46" />
+      <script>
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq)return;
+          n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq)f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1682588172002917');
+        fbq('track', "PageView");</script>
+      <noscript><img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=1682588172002917&ev=PageView&noscript=1"
+      /></noscript>
+
+</head>
+<body class="nav-is-fixed">
+
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-T4DW2V"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T4DW2V');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+<div class="cd-overlay"></div>
+
+<header id="main-header" class="cd-main-header nav-is-fixed">
+    
+
+
+
+
+<script>
+  var cb2;
+  $(document).ready(function () {
+    cb2 = new ComponentBuilder2();
+    $('#appCb2Show').click(function () {
+      cb2.launch('cd-quicksearch');
+    });
+  });
+</script>
+
+
+<div id="cb2-cover" class="cb2-cover"> </div>
+
+    <div id="cb2" class="cb2">
+
+      <div id="cb2-main">
+      <div class="cb2-header">
+        <div class="cb2-title">Kanshudo Component Builder</div>
+        <div id="cb2help" class="cb2spacer"><span class='ja-help-icon'></span></div>
+        <div id="cb2reset" class="cb2reset"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+        <div id="cb2hide" class="cb2hide-btn">&times;</div>
+      </div>
+
+      <div class="cb2-results">
+        <div id="cb2-kanji" class="cb2-kanji-div"></div>
+        <div id="componentslist" class="cb2-componentlist cb2list"></div>
+      </div>
+
+
+      <div class="cb2-draw-type-container">
+
+        <div class="cb2-section-half cb2-first">
+          <div class="cb2-sectheader">
+            <div class="cb2-item-title">Draw a component:</div>
+            <div id="cb2-drawreset" class="cb2spacer"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+            <div id="cb2-draw-hide" class="cb2-secthide"><span class='ja-down-chevron'></span></div>
+          </div>
+          <div id="cb2-draw" style="display:flex;">
+            <div>
+              <canvas id="cb2-canvas" style="width:300px;margin-top:5px;"></canvas>
+            </div>
+            <div class="cb2-draw-info">
+              <div id="cb2-draw-components" class="cb2-componentlist cb2smallgrid"></div>
+              <div id="cb2-drawhelp-btn" class="cb2-drawhelp"><span class='ja-help-icon'></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cb2-section-half">
+          <div class="cb2-sectheader">
+            <div class="cb2-item-title">Type a component or its name:</div>
+            <div class="cb2spacer">&nbsp;</div>
+            <div id="cb2-typereset" class="cb2reset"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+            <div id="cb2-type-hide" class="cb2-secthide"><span class='ja-down-chevron'></span></div>
+          </div>
+          <div id="cb2-type">
+            <input type="text" id="ctext" class="cb2-typeinput" spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off"/>
+            <div id="cb2-type-components" class="cb2-componentlist cb2smallgrid"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cb2-section">
+        <div class="cb2-sectheader">
+          <div class="cb2-item-title">Choose from a list:</div>
+          <div id="cb2-list-hide" class="cb2-secthide"><span class='ja-down-chevron'></span></div>
+        </div>
+        <div id="cb2-components">
+          <div id="divComponents" class="cb2-componentlist cb2grid"></div>
+          <div id="helpsettingsdiv" class="spaced">
+            <button id="cb2-list-btn" class="searchbutton">Change component list</button>
+            <div id="clistmessage" class="listtitle"></div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div id="cb2-list-edit" class="cb2-help">
+
+        <div class="cb2-header">
+          <div class="cb2-title">Change component list</div>
+          <div id="cb2-list-edit-hide" class="cb2hide-btn">&times;</div>
+        </div>
+
+        <div id="helpcontents" class="cb2-helpcontent">
+
+          <div style="margin-bottom: 20px;">By default the Component Builder shows the most common Joyo kanji components (ie, components which are themselves Joyo kanji, or which are used in at least 3 other Joyo kanji). Select an alternative set of components below.</div>
+
+          <input type="radio" name="list" id="list_3" value="3" checked="checked" />
+          <label for="list_3">Most common Joyo kanji components</label><br/>
+          <input type="radio" name="list" id="list_2" value="2" />
+          <label for="list_2">Standard radicals (and their variants)</label><br/>
+          <input type="radio" name="list" id="list_1" value="1" />
+          <label for="list_1">All components and radicals</label><br/>
+
+          <div class="spaced"><button id="cb2-list-save" class="searchbutton">Apply</button></div>
+
+          <div class="spaced">For details of all components and their English names, see the <a href="/component_details">Component collections</a>.</div>
+
+        </div>
+
+      </div>
+
+      <div id="cb2-help" class="cb2-help">
+
+        <div class="cb2-header">
+          <div class="cb2-title">Kanshudo Component Builder Help</div>
+          <div id="cb2help-hide" class="cb2hide-btn">&times;</div>
+        </div>
+
+        <div id="helpcontents" class="cb2-helpcontent">
+
+          <div class="spaced">For detailed instructions, see the <a href="/howto/component-builder">Component builder how to guide</a>.</div>
+
+          <div class="spaced">To find any kanji, first try to identify the components it is made up of. Once you have identified any component, search for it in any of three ways:
+            <ol>
+              <li>Draw it in the drawing area</li>
+              <li>Type the <a href="/component_details">name</a> in the text area</li>
+              <li>Look for it in the list</li>
+            </ol>
+          </div>
+
+          <div class="cb2-title">Example: look up 漢</div>
+          <div class="spaced">
+            <ul>
+              <li>Notice that 漢 is made of several components: 氵 艹 口 夫</li>
+              <li>Draw any of these components (one at a time) in the drawing area, and select it when you see it</li>
+              <li>Alternatively, look for a component in the list. 氵 艹 口 each have three strokes; 夫 has four strokes</li>
+              <li>If you know the meanings of the components, type any of them in the text area: water (氵), grass (艹), mouth (口) or husband (夫)</li>
+              <li>Keep adding components until you can see your kanji in the list of matches that appears near the top.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="cb2-drawhelp" class="cb2-help">
+
+        <div class="cb2-header">
+          <div class="cb2-title">Kanshudo Component Builder Drawing Help</div>
+          <div id="cb2-drawhelp-hide" class="cb2hide-btn">&times;</div>
+        </div>
+
+        <div id="drawhelpcontents" class="cb2-helpcontent">
+          <div class="spaced">The Kanshudo Component Builder can recognize any of the 416 components listed in the chart below the drawing area. Tips:</div>
+          <ul>
+            <li>Draw a component in the center of the area, as large as you can</li>
+            <li>Try to draw the component as it appears in the kanji you're looking up</li>
+            <li>Don't worry about stroke order or number of strokes</li>
+            <li>Don't draw more than one component at a time</li>
+          </ul>
+
+          <div class="cb2-title spaced">Not finding your component?</div>
+          <div class="spaced">
+            If you believe you've drawn your component correctly but the system is not recognizing it, please:
+            <div class="linkbuttondiv" id="cb2-drawsubmit">Let us know!</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="cd-search" class="cd-search">
+      <div id="appCb2Show" class="cb2appshowdiv">
+        <div class="cbsh">部 <span class='ja-brush'></span></div>
+      </div>
+      <input id="cd-quicksearch" class="cd-qs-input" type="search" placeholder="Quick Search: Kanji, Japanese, English..." autocomplete="off">
+
+      <div class="closecontainer qs" id="qs-close">
+        <div class="close qs"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+      </div>
+
+      <button id="qsearchbutton" class="searchbutton">Search</button>
+
+      <div id="cd-search-more">
+        <div id="content">
+            <div><a class="qslink" href="/search">Kanji search</a></div>
+            <div><a class="qslink" href="/searchw">Word search</a></div>
+            <div><a class="qslink" href="/searchn">Name search</a></div>
+            <div><a class="qslink" href="/searcht">Example search</a></div>
+            <div><a class="qslink" href="/sentence_translate">Sentence translate</a></div>
+            <div><a class="qslink" href="/searchmw">Multi-word search</a></div>
+            <div><a class="qslink" href="/grammar">Grammar search</a></div>
+            <div><a class="qslink" href="/searchsite">Site search</a></div>
+            <div><a class="qslink" href="/history">My search history</a></div>
+            <div><a class="qslink" href="/favorites">My favorites</a></div>
+        </div>
+      </div>
+    </div>
+
+  <a class="cd-logo" href="/">
+    <img alt="Kanshudo" width="40" border="0" src="/assets/kanshudo-logo_merged-4669c9b765cc0f43550c62f2db49ebf192ed0245afd67eb3a30f030841a24a58.png" />
+    <div class="cd-logo-text">Kanshudo</div>
+  </a>
+
+  <div class="cd-header-buttons-new" id="cd-header-buttons">
+
+
+    <div class="cd-nav-trigger-div"><a class="cd-dashboard-trigger side" style="color: #b3567f" href="/dashboard"><span class='ja-jm'></span></a></div>
+
+    <div><div class="cd-search-trigger"><span></span></div></div>
+
+      <div class="cd-nav-trigger-div"><div class="cd-nav-trigger"><span></span></div></div>
+  </div>
+
+</header>
+
+<nav class="cd-nav">
+  <ul id="cd-primary-nav" class="cd-primary-nav is-fixed adjust">
+
+
+    <li class="li-dash-trigger"><a title="Dashboard" id="li-a-d" href="/dashboard"><span class='ja-jm'></span></a></li>
+
+      <li class="has-children">
+        <a href="/dashboard" class="mastery">MASTERY</a>
+
+        <ul class="cd-nav-icons is-hidden mastery adjust">
+          <li class="go-back"><a href="#0">Menu</a></li>
+
+          <li>
+            <a class="cd-nav-item mastery" href="/kanji/mastery">
+              <div class="nnli">
+                <div class="nnli-icon mastery"><span class='ja-circles_kanji'></span></div>
+                <div>
+                  <h3 class="mastery">My kanji mastery</h3>
+                  <div class="nnli-text">View your knowledge of kanji and kana.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item mastery" href="/words/mastery">
+              <div class="nnli">
+                <div class="nnli-icon mastery"><span class='ja-circles_words'></span></div>
+                <div>
+                  <h3 class="mastery">My word mastery</h3>
+                  <div class="nnli-text">View your knowledge of Japanese vocabulary.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item mastery" href="/grammar/mastery?ufn=current">
+              <div class="nnli">
+                <div class="nnli-icon mastery"><span class='ja-circles_grammar'></span></div>
+                <div>
+                  <h3 class="mastery">My grammar mastery</h3>
+                  <div class="nnli-text">View your knowledge of Japanese grammar.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item mastery" href="/mastery">
+              <div class="nnli">
+                <div class="nnli-icon mastery"><span class='ja-japan_map_icon'></span></div>
+                <div>
+                  <h3 class="mastery">My mastery map</h3>
+                  <div class="nnli-text">Visualize your overall progress with Japanese.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item mastery" href="/studypoints">
+              <div class="nnli">
+                <div class="nnli-icon mastery"><span class='ja-stats-bars'></span></div>
+                <div>
+                  <h3 class="mastery">My study points <span class="hide_small">& history</span></h3>
+                  <div class="nnli-text">View study points you've earned, and view your study history.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item mastery" href="/account">
+              <div class="nnli">
+                <div class="nnli-icon mastery"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                <div>
+                  <h3 class="mastery">My account & settings</h3>
+                  <div class="nnli-text">View and edit your account information and system settings.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="has-children">
+        <a href="/study" class="study" id="menu_study">STUDY</a>
+
+        <ul class="cd-nav-icons is-hidden study adjust">
+          <li class="go-back"><a href="#0">Menu</a></li>
+
+          <li>
+            <a class="cd-nav-item study" href="/srs">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-flashcards'></span></div>
+                <div>
+                  <h3 class="study">Flashcards</h3>
+                  <div class="nnli-text">Study, review, create and import flashcards.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/study/boost_first">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-brain'></span></div>
+                <div>
+                  <h3 class="study">Boost</h3>
+                  <div class="nnli-text">Combine multiple learning modes to study words, kanji, and grammar in tandem.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/quick">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-bolt'></span></div>
+                <div>
+                  <h3 class="study">Quick Study</h3>
+                  <div class="nnli-text">Quickly learn kanji, kana, words or grammar - or test your current knowledge.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/ai/correct">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-ai-icon'></span></div>
+                <div>
+                  <h3 class="study">AI Sentence Correct</h3>
+                  <div class="nnli-text">Correct any Japanese sentence! Your personal Japanese coach.
+                    <div class="redrotatedsmall">NEW!</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+            <li>
+              <a class="cd-nav-item study" href="/topics">
+                <div class="nnli">
+                  <div class="nnli-icon study"><span class='ja-board_t'></span></div>
+                  <div>
+                    <h3 class="study">Topic Lessons</h3>
+                    <div class="nnli-text">
+                      Graded lessons focused on specific topics.
+                      <span class="nnli-ml">More lessons ...</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="cd-nav-item study" href="/beginnerlessons">
+                <div class="nnli">
+                  <div class="nnli-icon study"><span class='ja-board_bl'></span></div>
+                  <div>
+                    <h3 class="study">Beginner Lessons</h3>
+                    <div class="nnli-text">
+                      Lessons for absolute beginners. Zero to 100 kanji, plus grammar & vocab.
+                      <span class="nnli-ml">More lessons ...</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="cd-nav-item study" href="/ilessons">
+                <div class="nnli">
+                  <div class="nnli-icon study"><span class='ja-board_il'></span></div>
+                  <div>
+                    <h3 class="study">Intermediate Lessons</h3>
+                    <div class="nnli-text">
+                      Graded lessons from zero to 1000 kanji, plus vocab and grammar.
+                      <span class="nnli-ml">More lessons ...</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="cd-nav-item study" href="/tcompanion">
+                <div class="nnli">
+                  <div class="nnli-icon study"><span class='ja-board_tc'></span></div>
+                  <div>
+                    <h3 class="study">Textbook Companion</h3>
+                    <div class="nnli-text">
+                      Use Kanshudo with your favorite textbook.
+                      <span class="nnli-ml">More lessons ...</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/draw">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-brush'></span></div>
+                <div>
+                  <h3 class="study">Drawing Practice</h3>
+                  <div class="nnli-text">Practice drawing hiragana, katakana, kanji components and kanji.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/grammar">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-grammar'></span></div>
+                <div>
+                  <h3 class="study">Grammar</h3>
+                  <div class="nnli-text">A comprehensive reference guide to Japanese grammar.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/read">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-open-book'></span></div>
+                <div>
+                  <h3 class="study">Reading Corner</h3>
+                  <div class="nnli-text">Read real Japanese essays and texts.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/favorites">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-star'></span></div>
+                <div>
+                  <h3 class="study">My Favorites</h3>
+                  <div class="nnli-text">View tagged kanji, words, examples and grammar points.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/collections">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-collections'></span></div>
+                <div>
+                  <h3 class="study">Collections</h3>
+                  <div class="nnli-text">Kanji, words and names grouped in various ways for easy access.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/collections/jok">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-jok'></span></div>
+                <div>
+                  <h3 class="study">Joy o' Kanji essays</h3>
+                  <div class="nnli-text">Read detailed essays on each of the Jōyō kanji, individually or in Thematic Bundles.</div>
+                  <div class="redrotatedsmall">NEW!</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item study" href="/howto" id="menu_study_howto">
+              <div class="nnli">
+                <div class="nnli-icon study"><span class='ja-howto'></span></div>
+                <div>
+                  <h3 class="study">How-to Guides</h3>
+                  <div class="nnli-text">In-depth guides to studying Japanese, learning kanji, and using Kanshudo.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+        </ul>
+      </li>
+
+      <li class="has-children">
+        <a href="/play" class="play">PLAY</a>
+        <ul class="cd-nav-icons is-hidden adjust">
+          <li class="go-back"><a href="#0">Menu</a></li>
+
+          <li>
+            <a class="cd-nav-item play" href="/challenge">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-challenge'></span></div>
+                <div>
+                  <h3 class="play">Kanji Challenge</h3>
+                  <div class="nnli-text">The most effective way to study a kanji, with key words and examples.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/quiz">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-quiz_kanji'></span></div>
+                <div>
+                  <h3 class="play">Kanji Quiz</h3>
+                  <div class="nnli-text">Take the Kanji Quiz to assess your level.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/kanjimatch_first">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-kanji_match_icon'></span></div>
+                <div>
+                  <h3 class="play">Kanji Match</h3>
+                  <div class="nnli-text">Match kanji with their correct meanings.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/play/kanjibuilder/r">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-kanji_builder'></span></div>
+                <div>
+                  <h3 class="play">Kanji Builder</h3>
+                  <div class="nnli-text">Build kanji from their components.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/play/kanjidraw">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-kanjidraw'></span></div>
+                <div>
+                  <h3 class="play">Kanji Draw</h3>
+                  <div class="nnli-text">Practice drawing kanji. Try to beat your high score!</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+          <li>
+            <a class="cd-nav-item play" href="/play/kanjikeywords">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-kanjikeywords'></span></div>
+                <div>
+                  <h3 class="play">Kanji Keywords</h3>
+                  <div class="nnli-text">Type the most important words for each kanji reading.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/wordquiz">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-quiz_words'></span></div>
+                <div>
+                  <h3 class="play">Word Quiz</h3>
+                  <div class="nnli-text">Take the Word Quiz to build or test your vocabulary.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/wordmatch_first">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-word_match_icon'></span></div>
+                <div>
+                  <h3 class="play">Word Match</h3>
+                  <div class="nnli-text">Match words with their correct meanings.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/play/sentencebuilder_first">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-sb'></span></div>
+                <div>
+                  <h3 class="play">Sentence Builder</h3>
+                  <div class="nnli-text">Drag words to build sentences.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/play/sentencecomplete_first">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-sentence_complete_icon'></span></div>
+                <div>
+                  <h3 class="play">Sentence Complete</h3>
+                  <div class="nnli-text">Drag kanji to their correct places to complete sentences.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/play/answertype_first">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-answer_type'></span></div>
+                <div>
+                  <h3 class="play">Answer Type</h3>
+                  <div class="nnli-text">Type the readings of words to build your vocabulary.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="cd-nav-item play" href="/play/grammarmatch_first">
+              <div class="nnli">
+                <div class="nnli-icon play"><span class='ja-grammarmatch'></span></div>
+                <div>
+                  <h3 class="play">Grammar Match</h3>
+                  <div class="nnli-text">Identify the correct inflection for each sentence.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="/login" class="account">LOG IN</a>
+      </li>
+
+  </ul> <!-- primary-nav -->
+</nav> <!-- cd-nav -->
+
+
+
+<script>
+  $(document).ready(function() {
+    setUpS3audio();
+  })
+</script>
+
+<div class="main cd-main-content" id="main-content">
+
+  <div id="locator-ctr">
+    
+<link rel="stylesheet" href="/assets/locator-65a3b31785779aff10836ac482697a83cac13ce52b539e2fc36a332067c010e6.css" media="screen" />
+
+
+
+    
+<link rel="stylesheet" href="/assets/locator-65a3b31785779aff10836ac482697a83cac13ce52b539e2fc36a332067c010e6.css" media="screen" />
+
+
+
+
+
+<div class="locator search" style="position: relative;" id="sectionlocator">
+  <div><a class="search " href="/search_advanced">SEARCH</a></div>
+
+    <i class="fa fa-angle-right"></i>
+    <div><a class="search " href="/searcht">EXAMPLE SEARCH</a></div>
+
+    <i class="fa fa-angle-right"></i>
+    <div><a class="search sel" href="">RESULTS</a></div>
+
+    <script>
+      $(document).ready(function () {
+        $('#sswitch').click(function () {
+          openCategorySearch();
+        });
+        $('#ss-overlay').click(function () {
+          $('#ss-overlay').removeClass('is-visible');
+          $('#sswitch_full').fadeOut();
+        });
+      })
+    </script>
+
+    <div class="sswitch" id="sswitch">
+      <i class='fa fa-search' aria-hidden='true'></i>
+      &nbsp;
+      <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </div>
+    <div class="sswitch_full" id="sswitch_full" style="display:none;">
+
+
+          <div><a href="/searchq?q=%E9%A3%9F">Quick search</a></div>
+
+
+          <div><a href="/search?q=%E9%A3%9F">Kanji search</a></div>
+
+
+          <div><a href="/searchw?q=%E9%A3%9F">Word search</a></div>
+
+
+          <div><a href="/searchn?q=%E9%A3%9F">Name search</a></div>
+
+
+          <div>Example search</div>
+
+
+          <div><a href="/sentence_translate?q=%E9%A3%9F">Sentence translate</a></div>
+
+
+          <div><a href="/searchmw?q=%E9%A3%9F">Multi-word search</a></div>
+
+
+          <div><a href="/grammar?q=%E9%A3%9F">Grammar search</a></div>
+
+
+          <div><a href="/searchsite?q=%E9%A3%9F">Site search</a></div>
+
+
+    </div>
+
+    <div id="ss-overlay"></div>
+
+</div>
+
+  </div>
+
+
+  
+<link rel="stylesheet" href="/assets/search-140c4512d4f2791119031bc00e7da9d97a4b3f85c9d325152ce543a713e2e020.css" media="screen" />
+<link rel="stylesheet" href="/assets/grammars-4f6bc543ad14f7409a4acfd72a25d842709a3d9d9dc555ce5650a31483834f2e.css" media="screen" />
+<link rel="stylesheet" href="/assets/names-77a68e37f0cc5736f32e69b00c990a3f4f17c1e72ba6a1b7a80ad5f5f9bef660.css" media="screen" />
+
+
+
+
+
+
+
+<script>
+  var query;
+
+  function handleSearch() {
+    let visible = ($('#cd-search').css('opacity') == 1);
+    if (visible) return;
+
+    //if (qsInProgress) return;
+    let text = $("#searchtext").val().substring(0, 200);
+    if (text == "") return;
+    if (text == query) return;
+    location.href = encodeURI("/searcht?q=" + text);
+  }
+
+    function testClose() {
+        if ($('#searchtext').val().length>0) {
+            $('#close').show();
+        } else {
+            $('#close').hide();
+        }
+    }
+
+    $(document).ready(function () {
+        query = '食';
+        $("#searchtext").val(query).focus();
+
+        $("#searchbutton").click(handleSearch);
+
+        $(document).keypress(function (e) {
+            if (e.which == 13) handleSearch();
+        });
+
+        $('#close').click(function() {
+            $('#close').hide();
+            $('#searchtext').val('').focus();
+        });
+
+        $("#searchtext").focus().bind('change keyup input', testClose);
+        testClose();
+
+      $('#qsCbShow').click(function () {
+        cb2.launch("searchtext");
+      });
+
+    });
+</script>
+
+<div class="universalsearch">
+    <div id="qsCbShow" class="cbshowdiv">
+      <div class="cbsh">部 <span class='ja-brush'></span></div>
+      <div id="cbst">Components</div>
+    </div>
+  <div class="sb_inp"><input type="text" id="searchtext" class="sb_searchbox" value="食"/></div>
+  <div class="closecontainer" id="close">
+    <div class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+  </div>
+  <div class="sb_btn">
+    <button id="searchbutton" class="searchbutton2">Search</button>
+  </div>
+</div>
+
+
+<div class="bodyarea">
+
+
+  <div id="message"></div>
+
+  
+
+
+    
+
+
+  
+  
+  
+
+
+
+
+
+
+
+      <div class="title_h4">
+          11 examples found
+          containing '食'
+                  </div>
+
+
+
+      <div class="halfspaced">
+          
+
+
+
+
+
+
+
+
+
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+  <script>
+    $(document).ready(function() {
+        setRate(1);
+    })
+  </script>
+
+<div class="tat_audio2" id="audio3697" onclick="speakJapanese('れいがいわ,ちゅうごくで、おそらくたいらなパンわ,しょくされていなかった。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_3697" href="/example/3697"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn3697').click(function () {
+      let obj = $.ajax({url: "/example/download/3697", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml3697').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn3697" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml3697"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t3697"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_3697" onclick="toggleFurigana(3697)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,3697,"例外")'><span class='f_container noflip'><div class='furigana tf3697'>れいがい</div><div class='f_kanji'>例外</div></span></a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,3697,"中国")'><span class='f_container noflip'><div class='furigana tf3697'>ちゅうごく</div><div class='f_kanji'>中国</div></span></a><span class='noflip tatvoc-stop'>で</span><span class='noflip tatvoc-stop'>、</span><a class='noflip tatvoc' onclick='tatDetails(this,3697,"おそらく")'>おそらく</a><a class='noflip tatvoc' onclick='tatDetails(this,3697,"平らな")'><span class='f_container noflip'><div class='furigana tf3697'>たい</div><div class='f_kanji'>平</div></span>らな</a><a class='noflip tatvoc' onclick='tatDetails(this,3697,"パン")'>パン</a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,3697,"食")'><span class='f_container noflip'><div class='furigana tf3697'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,3697,"されていなかった")'>されていなかった</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_3697" onclick="toggleEnglish(3697)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_3697">
+        <span class="text" >The exception was in China, where flat bread was probably not eaten.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_3697"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+  <script>
+    $(document).ready(function() {
+        setRate(1);
+    })
+  </script>
+
+<div class="tat_audio2" id="audio60382" onclick="speakJapanese('しょくしゅうかんわ,くにによりことなる。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_60382" href="/example/60382"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn60382').click(function () {
+      let obj = $.ajax({url: "/example/download/60382", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml60382').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn60382" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml60382"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t60382"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_60382" onclick="toggleFurigana(60382)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,60382,"食")'><span class='f_container noflip'><div class='furigana tf60382'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,60382,"習慣")'><span class='f_container noflip'><div class='furigana tf60382'>しゅうかん</div><div class='f_kanji'>習慣</div></span></a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,60382,"国")'><span class='f_container noflip'><div class='furigana tf60382'>くに</div><div class='f_kanji'>国</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,60382,"により")'>により</a><a class='noflip tatvoc' onclick='tatDetails(this,60382,"異なる")'><span class='f_container noflip'><div class='furigana tf60382'>こと</div><div class='f_kanji'>異</div></span>なる</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_60382" onclick="toggleEnglish(60382)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_60382">
+        <span class="text" >Eating habits differ from country to country.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_60382"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio3888" onclick="speakJapanese('よいしょくしゅうかんを,もつことがふかけつなことである。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_3888" href="/example/3888"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn3888').click(function () {
+      let obj = $.ajax({url: "/example/download/3888", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml3888').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn3888" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml3888"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t3888"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_3888" onclick="toggleFurigana(3888)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,3888,"良い")'><span class='f_container noflip'><div class='furigana tf3888'>よ</div><div class='f_kanji'>良</div></span>い</a><a class='noflip tatvoc' onclick='tatDetails(this,3888,"食")'><span class='f_container noflip'><div class='furigana tf3888'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,3888,"習慣")'><span class='f_container noflip'><div class='furigana tf3888'>しゅうかん</div><div class='f_kanji'>習慣</div></span></a><span class='noflip tatvoc-stop'>を</span><a class='noflip tatvoc' onclick='tatDetails(this,3888,"持つ")'><span class='f_container noflip'><div class='furigana tf3888'>も</div><div class='f_kanji'>持</div></span>つ</a><a class='noflip tatvoc' onclick='tatDetails(this,3888,"こと")'>こと</a><span class='noflip tatvoc-stop'>が</span><a class='noflip tatvoc' onclick='tatDetails(this,3888,"不可欠な")'><span class='f_container noflip'><div class='furigana tf3888'>ふかけつ</div><div class='f_kanji'>不可欠</div></span>な</a><a class='noflip tatvoc' onclick='tatDetails(this,3888,"こと")'>こと</a><a class='noflip tatvoc' onclick='tatDetails(this,3888,"である")'>である</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_3888" onclick="toggleEnglish(3888)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_3888">
+        <span class="text" >Good eating habits are essential.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_3888"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio34308" onclick="speakJapanese('かれわ,うえたものにしょくを,あたえた。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_34308" href="/example/34308"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn34308').click(function () {
+      let obj = $.ajax({url: "/example/download/34308", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml34308').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn34308" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml34308"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t34308"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_34308" onclick="toggleFurigana(34308)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,34308,"彼")'><span class='f_container noflip'><div class='furigana tf34308'>かれ</div><div class='f_kanji'>彼</div></span></a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,34308,"飢えた")'><span class='f_container noflip'><div class='furigana tf34308'>う</div><div class='f_kanji'>飢</div></span>えた</a><a class='noflip tatvoc' onclick='tatDetails(this,34308,"者")'><span class='f_container noflip'><div class='furigana tf34308'>もの</div><div class='f_kanji'>者</div></span></a><span class='noflip tatvoc-stop'>に</span><a class='noflip tatvoc' onclick='tatDetails(this,34308,"食")'><span class='f_container noflip'><div class='furigana tf34308'>しょく</div><div class='f_kanji'>食</div></span></a><span class='noflip tatvoc-stop'>を</span><a class='noflip tatvoc' onclick='tatDetails(this,34308,"与えた")'><span class='f_container noflip'><div class='furigana tf34308'>あた</div><div class='f_kanji'>与</div></span>えた</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_34308" onclick="toggleEnglish(34308)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_34308">
+        <span class="text" >He furnished food to the hungry.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_34308"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio155263" onclick="speakJapanese('「うえとしょくのにほんし」')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_155263" href="/example/155263"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn155263').click(function () {
+      let obj = $.ajax({url: "/example/download/155263", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml155263').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn155263" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml155263"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t155263"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_155263" onclick="toggleFurigana(155263)"><span class='ja-furigana'></span></div>
+
+      <span class='noflip tatvoc-stop'>「</span><a class='noflip tatvoc' onclick='tatDetails(this,155263,"飢え")'><span class='f_container noflip'><div class='furigana tf155263'>う</div><div class='f_kanji'>飢</div></span>え</a><span class='noflip tatvoc-stop'>と</span><a class='noflip tatvoc' onclick='tatDetails(this,155263,"食")'><span class='f_container noflip'><div class='furigana tf155263'>しょく</div><div class='f_kanji'>食</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,155263,"日本史")'><span class='f_container noflip'><div class='furigana tf155263'>にほんし</div><div class='f_kanji'>日本史</div></span></a><span class='noflip tatvoc-stop'>」</span>
+
+
+        <span style="margin-left: 5px; font-size: 15px;" class="tag">title (book, album etc.)</span>
+
+      <br/>
+
+      <div class="tat-tf" id="te_155263" onclick="toggleEnglish(155263)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_155263">
+        <span class="text" >Hunger and Food in Japanese History</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_155263"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio58524" onclick="speakJapanese('じんるいわ,たいこのむかしからゆびを,もちいてたべものを,しょくしてきたのである。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_58524" href="/example/58524"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn58524').click(function () {
+      let obj = $.ajax({url: "/example/download/58524", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml58524').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn58524" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml58524"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t58524"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_58524" onclick="toggleFurigana(58524)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,58524,"人類")'><span class='f_container noflip'><div class='furigana tf58524'>じんるい</div><div class='f_kanji'>人類</div></span></a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,58524,"太古")'><span class='f_container noflip'><div class='furigana tf58524'>たいこ</div><div class='f_kanji'>太古</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,58524,"昔")'><span class='f_container noflip'><div class='furigana tf58524'>むかし</div><div class='f_kanji'>昔</div></span></a><span class='noflip tatvoc-stop'>から</span><a class='noflip tatvoc' onclick='tatDetails(this,58524,"指")'><span class='f_container noflip'><div class='furigana tf58524'>ゆび</div><div class='f_kanji'>指</div></span></a><span class='noflip tatvoc-stop'>を</span><a class='noflip tatvoc' onclick='tatDetails(this,58524,"用いて")'><span class='f_container noflip'><div class='furigana tf58524'>もち</div><div class='f_kanji'>用</div></span>いて</a><a class='noflip tatvoc' onclick='tatDetails(this,58524,"食べ物")'><span class='f_container noflip'><div class='furigana tf58524'>た</div><div class='f_kanji'>食</div></span>べ<span class='f_container noflip'><div class='furigana tf58524'>もの</div><div class='f_kanji'>物</div></span></a><span class='noflip tatvoc-stop'>を</span><a class='noflip tatvoc' onclick='tatDetails(this,58524,"食")'><span class='f_container noflip'><div class='furigana tf58524'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,58524,"してきた")'>してきた</a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,58524,"である")'>である</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_58524" onclick="toggleEnglish(58524)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_58524">
+        <span class="text" >People have eaten with their fingers from the beginning of history.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_58524"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio157662" onclick="speakJapanese('「たたかうもやししょくのグローバリズムにかんぜんとたちむかうあるせいさんしゃのふんとうき」')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_157662" href="/example/157662"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn157662').click(function () {
+      let obj = $.ajax({url: "/example/download/157662", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml157662').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn157662" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml157662"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t157662"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_157662" onclick="toggleFurigana(157662)"><span class='ja-furigana'></span></div>
+
+      <span class='noflip tatvoc-stop'>「</span><a class='noflip tatvoc' onclick='tatDetails(this,157662,"闘う")'><span class='f_container noflip'><div class='furigana tf157662'>たたか</div><div class='f_kanji'>闘</div></span>う</a><a class='noflip tatvoc' onclick='tatDetails(this,157662,"もやし")'>もやし</a><a class='noflip tatvoc' onclick='tatDetails(this,157662,"食")'><span class='f_container noflip'><div class='furigana tf157662'>しょく</div><div class='f_kanji'>食</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,157662,"グローバリズム")'>グローバリズム</a><span class='noflip tatvoc-stop'>に</span><a class='noflip tatvoc' onclick='tatDetails(this,157662,"敢然")'><span class='f_container noflip'><div class='furigana tf157662'>かんぜん</div><div class='f_kanji'>敢然</div></span></a><span class='noflip tatvoc-stop'>と</span><a class='noflip tatvoc' onclick='tatDetails(this,157662,"立ち向かう")'><span class='f_container noflip'><div class='furigana tf157662'>た</div><div class='f_kanji'>立</div></span>ち<span class='f_container noflip'><div class='furigana tf157662'>む</div><div class='f_kanji'>向</div></span>かう</a><a class='noflip tatvoc' onclick='tatDetails(this,157662,"ある")'>ある</a><a class='noflip tatvoc' onclick='tatDetails(this,157662,"生産者")'><span class='f_container noflip'><div class='furigana tf157662'>せいさんしゃ</div><div class='f_kanji'>生産者</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,157662,"奮闘")'><span class='f_container noflip'><div class='furigana tf157662'>ふんとう</div><div class='f_kanji'>奮闘</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,157662,"記")'><span class='f_container noflip'><div class='furigana tf157662'>き</div><div class='f_kanji'>記</div></span></a><span class='noflip tatvoc-stop'>」</span>
+
+
+        <span style="margin-left: 5px; font-size: 15px;" class="tag">title (book, album etc.)</span>
+
+      <br/>
+
+      <div class="tat-tf" id="te_157662" onclick="toggleEnglish(157662)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_157662">
+        <span class="text" >The Fighting Bean Sprout (Farmers): The History of Growers Who Have Boldly Made a Strenuous Effort to Fight Food Globalism</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_157662"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio97675" onclick="speakJapanese('かいびんかいしょくかいみんわ,けんこうのしるし。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_97675" href="/example/97675"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn97675').click(function () {
+      let obj = $.ajax({url: "/example/download/97675", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml97675').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn97675" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml97675"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t97675"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_97675" onclick="toggleFurigana(97675)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,97675,"快")'><span class='f_container noflip'><div class='furigana tf97675'>かい</div><div class='f_kanji'>快</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,97675,"便")'><span class='f_container noflip'><div class='furigana tf97675'>びん</div><div class='f_kanji'>便</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,97675,"快")'><span class='f_container noflip'><div class='furigana tf97675'>かい</div><div class='f_kanji'>快</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,97675,"食")'><span class='f_container noflip'><div class='furigana tf97675'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,97675,"快眠")'><span class='f_container noflip'><div class='furigana tf97675'>かいみん</div><div class='f_kanji'>快眠</div></span></a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,97675,"健康")'><span class='f_container noflip'><div class='furigana tf97675'>けんこう</div><div class='f_kanji'>健康</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,97675,"しるし")'>しるし</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_97675" onclick="toggleEnglish(97675)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_97675">
+        <span class="text" >A good appetite, sound sleep, and regular motions are the three signs of good health.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_97675"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio79981" onclick="speakJapanese('わたしたちわ,いきていくためにわ,い・しょく・じゅうがひつようです。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_79981" href="/example/79981"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn79981').click(function () {
+      let obj = $.ajax({url: "/example/download/79981", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml79981').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn79981" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml79981"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t79981"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_79981" onclick="toggleFurigana(79981)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,79981,"私たち")'><span class='f_container noflip'><div class='furigana tf79981'>わたし</div><div class='f_kanji'>私</div></span>たち</a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,79981,"生きていく")'><span class='f_container noflip'><div class='furigana tf79981'>い</div><div class='f_kanji'>生</div></span>きていく</a><a class='noflip tatvoc' onclick='tatDetails(this,79981,"ために")'>ために</a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,79981,"衣")'><span class='f_container noflip'><div class='furigana tf79981'>い</div><div class='f_kanji'>衣</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,79981,"・")'>・</a><a class='noflip tatvoc' onclick='tatDetails(this,79981,"食")'><span class='f_container noflip'><div class='furigana tf79981'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,79981,"・")'>・</a><a class='noflip tatvoc' onclick='tatDetails(this,79981,"住")'><span class='f_container noflip'><div class='furigana tf79981'>じゅう</div><div class='f_kanji'>住</div></span></a><span class='noflip tatvoc-stop'>が</span><a class='noflip tatvoc' onclick='tatDetails(this,79981,"必要")'><span class='f_container noflip'><div class='furigana tf79981'>ひつよう</div><div class='f_kanji'>必要</div></span></a><span class='noflip tatvoc-stop'>です</span><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_79981" onclick="toggleEnglish(79981)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_79981">
+        <span class="text" >We need food, clothing and shelter in order to live.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_79981"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio121173" onclick="speakJapanese('ひとのしょくしゅうかんが１００まんにんいじょうのしぼうげんいんになっているそうだ。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_121173" href="/example/121173"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn121173').click(function () {
+      let obj = $.ajax({url: "/example/download/121173", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml121173').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn121173" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml121173"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t121173"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_121173" onclick="toggleFurigana(121173)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,121173,"人")'><span class='f_container noflip'><div class='furigana tf121173'>ひと</div><div class='f_kanji'>人</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,121173,"食")'><span class='f_container noflip'><div class='furigana tf121173'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,121173,"習慣")'><span class='f_container noflip'><div class='furigana tf121173'>しゅうかん</div><div class='f_kanji'>習慣</div></span></a><span class='noflip tatvoc-stop'>が</span><a class='noflip tatvoc' onclick='tatDetails(this,121173,"１００")'>１００</a><a class='noflip tatvoc' onclick='tatDetails(this,121173,"万")'><span class='f_container noflip'><div class='furigana tf121173'>まん</div><div class='f_kanji'>万</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,121173,"人")'><span class='f_container noflip'><div class='furigana tf121173'>にん</div><div class='f_kanji'>人</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,121173,"以上")'><span class='f_container noflip'><div class='furigana tf121173'>いじょう</div><div class='f_kanji'>以上</div></span></a><span class='noflip tatvoc-stop'>の</span><a class='noflip tatvoc' onclick='tatDetails(this,121173,"死亡")'><span class='f_container noflip'><div class='furigana tf121173'>しぼう</div><div class='f_kanji'>死亡</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,121173,"原因")'><span class='f_container noflip'><div class='furigana tf121173'>げんいん</div><div class='f_kanji'>原因</div></span></a><span class='noflip tatvoc-stop'>に</span><a class='noflip tatvoc' onclick='tatDetails(this,121173,"なっている")'>なっている</a><a class='noflip tatvoc' onclick='tatDetails(this,121173,"そう")'>そう</a><span class='noflip tatvoc-stop'>だ</span><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_121173" onclick="toggleEnglish(121173)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_121173">
+        <span class="text" >Diet accounts for more than one million deaths.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_121173"></div>
+    </div>
+
+
+    <div class="tatoeba ">
+      <div class="icons">
+          
+
+
+
+
+
+
+<div class="tat_audio2" id="audio1471" onclick="speakJapanese('インドわ,ちいきしょくゆたかなしょくぶんかがあります。')"><span class="ja-audio sd"></span><span style="margin-left: 5px;"></span></div>
+
+
+
+        <a class="details-link" id="tatdetails_1471" href="/example/1471"><span class='ja-details'></span></a>
+        
+
+<script>
+  $(document).ready(function () {
+    $('#downloadTatBtn1471').click(function () {
+      let obj = $.ajax({url: "/example/download/1471", type: "post"});
+      obj.done(function (data) {
+        if (data.result === 0) {
+          $('#downloadTatHtml1471').html(data.html);
+
+          show_downloadTat();
+        }
+      });
+    });
+  });
+</script>
+
+<div id="downloadTatBtn1471" class="download-link" style="display:inline;"><i class='fa fa-cloud-download' aria-hidden='true'></i> </div>
+
+<div id="downloadTatHtml1471"></div>
+        
+
+
+  <div class="fav_container" onclick="show_favorites_warning();">
+    <span class="ja-star_open sd" id="star_span_t1471"></span>
+  </div>
+
+
+      </div>
+
+
+      <div class="tat-tf" id="tf_1471" onclick="toggleFurigana(1471)"><span class='ja-furigana'></span></div>
+
+      <a class='noflip tatvoc' onclick='tatDetails(this,1471,"インド")'>インド</a><span class='noflip tatvoc-stop'>は</span><a class='noflip tatvoc' onclick='tatDetails(this,1471,"地域色")'><span class='f_container noflip'><div class='furigana tf1471'>ちいきしょく</div><div class='f_kanji'>地域色</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,1471,"豊かな")'><span class='f_container noflip'><div class='furigana tf1471'>ゆた</div><div class='f_kanji'>豊</div></span>かな</a><a class='noflip tatvoc' onclick='tatDetails(this,1471,"食")'><span class='f_container noflip'><div class='furigana tf1471'>しょく</div><div class='f_kanji'>食</div></span></a><a class='noflip tatvoc' onclick='tatDetails(this,1471,"文化")'><span class='f_container noflip'><div class='furigana tf1471'>ぶんか</div><div class='f_kanji'>文化</div></span></a><span class='noflip tatvoc-stop'>が</span><a class='noflip tatvoc' onclick='tatDetails(this,1471,"あります")'>あります</a><span class='noflip tatvoc-stop'>。</span>
+
+
+
+      <br/>
+
+      <div class="tat-tf" id="te_1471" onclick="toggleEnglish(1471)"><span class='ja-english'></span></div>
+      <span class="tat_eng" id="eng_1471">
+        <span class="text" >India has a cuisine rich in regional flavour.</span>
+        <span class="placeholder" style='display:none;'>(click the icon for English translation)</span>
+      </span>
+
+        <br/>
+
+      <div class="tatdd" id="tatdd_1471"></div>
+    </div>
+
+
+
+
+      </div>
+
+
+
+  <div class="clear" style="display:flex;">
+
+
+
+  </div>
+</div>
+
+    <div class="callout">
+      Kanshudo is your AI Japanese tutor, and your constant companion on the road to mastery of the Japanese language.
+      To get started learning Japanese, just follow the study recommendations on your <a href="/dashboard">Dashboard</a>.
+      You can use <a href="/searchq">Quick search</a> (accessible using the <i class='fa fa-search' aria-hidden='true'></i> icon at the top of every page) to look up any Japanese word, kanji or grammar point, as well as to find anything on Kanshudo quickly.
+      For an overview, take the <a href="/tour">tour</a>.
+    </div>
+</div>
+
+
+<div id="credits" class="credits">
+  Search results include information from a variety of sources, including Kanshudo (kanji mnemonics, kanji readings,
+  kanji components, vocab and name frequency data, grammar points, examples), JMdict (vocabulary), Tatoeba (examples), Enamdict (names),
+  KanjiVG (kanji animations and stroke order), and Joy o' Kanji (kanji and radical synopses).
+  Translations provided by Google's Neural Machine Translation engine.
+  For more information see <a href="/credits">credits</a>.
+</div>
+
+    <div class="footernew" id="footer">
+  <div class="fmain">
+
+    <div class="fsection">
+      <div class="fsheader">Information and help</div>
+      <div><a href="/tour">Kanshudo tour</a></div>
+      <div><a href="/howto/kanshudo">How to use Kanshudo</a></div>
+      <div><a href="/howto/getting-started-learning-japanese">How to learn Japanese</a></div>
+      <div><a href="/how-to-master-the-kanji">How to master kanji</a></div>
+      <div><a href="/howto">More &#39;how to&#39; guides</a></div>
+      <div><a href="/features">Visual feature index</a></div>
+      <div><a href="/searchsite">Site search</a></div>
+      <div><a href="/faq">FAQ</a></div>
+      <div><a href="/index">Site index</a></div>
+      <div><a href="/study">Study index</a></div>
+      <div><a href="/study/lessons">Lesson index</a></div>
+      <div><a href="/play">Play index</a></div>
+      <div><a href="/testimonials">Testimonials</a></div>
+        <div><a href="/contact">Contact</a></div>
+        <div><a href="/subscribe">Subscribe</a></div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsheader">Kanji & kana</div>
+      <div><a href="/kanjimastery"><span class='ja-circles_kanji'></span> My kanji mastery</a></div>
+      <div><a href="/hiragana">About hiragana</a></div>
+      <div><a href="/katakana">About katakana</a></div>
+      <div><a href="/kanji_intro">About kanji</a></div>
+      <div><a href="/component_details">Kanji components</a></div>
+      <div><a href="/draw">Drawing practice</a></div>
+      <div><a href="/quick">Quick study</a></div>
+      <div><a href="/srs">Flashcards</a></div>
+      <div><a href="/collections">Kanji collections</a></div>
+      <div><a href="/collections/jok">Joy o&#39; Kanji essays</a></div>
+      <div><a href="/challenge">Kanji Challenge</a></div>
+      <div><a href="/quiz">Kanji Quiz</a></div>
+      <div><a href="/play/kanjikeywords">Kanji Keywords</a></div>
+      <div><a href="/play/kanjibuilder">Kanji Builder</a></div>
+      <div><a href="/play/kanjidraw">Kanji Draw</a></div>
+      <div><a href="/kanjimatch">Kanji Match</a></div>
+      <div><a href="/study/boost_first/kanji">Boost</a></div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsheader">Words</div>
+      <div><a href="/words/mastery"><span class='ja-circles_words'></span> My word mastery</a></div>
+      <div><a href="/quick">Quick study</a></div>
+      <div><a href="/srs">Flashcards</a></div>
+      <div><a href="/wordquiz">Word Quiz</a></div>
+      <div><a href="/wordmatch">Word Match</a></div>
+      <div><a href="/play/sentencebuilder_first">Sentence Builder</a></div>
+      <div><a href="/play/sentencecomplete_first">Sentence Complete</a></div>
+      <div><a href="/play/answertype_first">Answer Type</a></div>
+      <div><a href="/collections">Word collections</a></div>
+      <div><a href="/study/boost_first/word">Boost</a></div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsheader">Grammar</div>
+      <div><a href="/grammar/mastery"><span class='ja-circles_grammar'></span> My grammar mastery</a></div>
+      <div><a href="/ai/correct">AI Sentence Correct</a></div>
+      <div><a href="/grammar">Grammar library</a></div>
+      <div><a href="/inflections">Inflection showcase</a></div>
+      <div><a href="/quick">Quick study</a></div>
+      <div><a href="/srs">Flashcards</a></div>
+      <div><a href="/play/grammarmatch_first">Grammar Match</a></div>
+      <div><a href="/play/sentencebuilder_first">Sentence Builder</a></div>
+      <div><a href="/study/boost_first/grammar">Boost</a></div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsheader">My account</div>
+      <div><a href="/dashboard"><span class='ja-jm'></span> Dashboard</a></div>
+      <div><a href="/account">Account &amp; settings</a></div>
+      <div><a href="/favorites">My favorites</a></div>
+      <div><a href="/studypoints">My study points</a></div>
+      <div><a href="/studyhistory?month=current">My study history</a></div>
+      <div><a href="/daily_kanji">Daily Kanji</a></div>
+        <div><a href="/users/sign_in">Log in</a> | <a href="/users/sign_up">Register</a></div>
+        <div><a href="/subscribe">GO PRO</a></div>
+    </div>
+
+
+    <div class="fsection">
+      <div class="fsheader">Search</div>
+      <div><a href="/searchq">Quick search</a></div>
+      <div><a href="/search">Kanji search</a></div>
+      <div><a href="/search?cb=y">Kanji by component</a></div>
+      <div><a href="/searchmn">Kanji by mnemonic</a></div>
+      <div><a href="/searchw">Word search</a></div>
+      <div><a href="/sentence_translate">Sentence translate</a></div>
+      <div><a href="/searchmw">Multi-word search</a></div>
+      <div><a href="/grammar">Grammar search</a></div>
+      <div><a href="/searchn">Name search</a></div>
+      <div><a href="/searcht">Example search</a></div>
+      <div><a href="/poi">Points of interest</a></div>
+      <div><a href="/searchsite">Site search</a></div>
+      <div><a href="/history">My search history</a></div>
+      <div id="lmenu_search_index"><a href="/search_advanced">Search index</a></div>
+    </div>
+
+  </div>
+
+  <div class="fsocial">
+    <a href="/blog">Blog</a> &nbsp;
+    <a href="https://www.youtube.com/@Kanshudo1" target=" _blank"><span class="fa fa-youtube-play"></span></a> &nbsp;
+    <a href="https://www.facebook.com/kanjimastery" target=" _blank"><span class="fa fa-facebook-square"></span></a> &nbsp;
+  </div>
+
+  <div class="flegal">
+    <div>
+      <a href="/opportunities">Jobs &amp; opportunities</a> &nbsp;
+      <a href="/privacy">Privacy</a> &nbsp;
+      <a href="/credits">Credits</a> &nbsp;
+      <a href="/tc">Terms &amp; conditions</a>
+    </div>
+    <div>
+      Copyright © Kanshudo 2023
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <script>
+      $(document).ready(function() {
+          displayMs("The most effective way to learn Japanese.", "Sign up for FREE lessons, games, flashcards, and more!<div class=halfspaced><a class=linkbutton href='/tour'>Learn more</a> &nbsp; <a class=linkbutton href='/users/sign_up'>Get started</a></div>");
+      });
+  </script>
+<div id="ms">
+  <a id="ms_hide">&times;</a>
+  <div id="ms_head"></div>
+  <div id="ms_subhead"></div>
+</div>
+
+
+
+
+
+
+
+
+  <div id="mastery_edit_popup" style="display: none;">
+    To view mastery data, you must be logged in to Kanshudo. Please <a href="/login">LOG IN</a> or <a href="/register">REGISTER</a>.
+
+    <div class="spaced">Kanshudo tracks your mastery (knowledge) of every kanji, word and grammar point in Japanese individually. In item searches (<a href="/search">Kanji search</a>, <a href="/searchw">Word search</a> and <a href="/searchg">Grammar search</a>), you will see a small circle with a number from 0 - 4 next to each item, where zero means 'no mastery' and 4 means 'absolute mastery'. A summary of your mastery data is displayed in your <a href="/kanji/mastery"><span class='ja-circles_kanji'></span> Kanji</a>, <a href="/words/mastery"><span class='ja-circles_words'></span> Word</a> and <a href="/grammar/mastery"><span class='ja-circles_grammar'></span> Grammar</a> mastery wheels.</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var shownOnce_mcw = false;
+  var bodyOverflow_mcw;
+  var isVisible_mcw = false;
+
+  function setTitle_mcw(title) {
+      $("#w_title_mcw").html(title);
+  }
+
+  function resizer_mcw() {
+    if (!isVisible_mcw) return;
+    // console.log("Resizer mcw called");
+
+
+    sizeOverlayVarHeight($('#warning_mcw'));
+
+  }
+
+  function resizerMinWidth_mcw(minWidth) {
+    if (parseInt($('#warning_mcw').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_mcw'), minWidth);
+  }
+
+  function show_mcw() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'mcw'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_mcw called");
+    isVisible_mcw = true;
+    if (typeof(bodyOverflow_mcw) == "undefined") {
+      bodyOverflow_mcw = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+      if (!shownOnce_mcw) {
+        $('#warning_text_mcw').html('');
+        $('#mastery_edit_popup').show().appendTo('#warning_text_mcw');
+        shownOnce_mcw = true;
+      }
+
+
+
+    resizer_mcw();
+    $(window).resize(function() { resizer_mcw });
+
+    $('#warning_mcw').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_mcw').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_mcw').css({'z-index': '1002'});
+  }
+
+  function hide_mcw() {
+    $(document.body).css('overflow', bodyOverflow_mcw);
+    bodyOverflow_mcw = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_mcw').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_mcw').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'mcw'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_mcw = false;
+  }
+
+  function hide_cancel_mcw() {
+      $('#hide_mcw').hide();
+  }
+
+  function setCssClass_mcw(cssClass) {
+    $('#warning_mcw').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_mcw() {
+    if (!isVisible_mcw) return;
+
+    hide_mcw();
+  }
+
+  $(document).ready(function () {
+    $("#show_mcw").click(function() { show_mcw() });
+    $("#hide_mcw").click(function() { hide_mcw() });
+    $("#cancel_mcw").click(function() { handleOk_mcw() });
+  });
+</script>
+
+
+<div id="cover_mcw" class="cover"></div>
+<div id="warning_mcw" class="warning" style="display: none; ">
+  <a id="hide_mcw" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_mcw" style="">Mastery</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_mcw">
+        
+    </div>
+  </div>
+
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+
+
+  
+<style>
+  .emph {
+    color:#7f003f;
+    font-weight:bold;
+  }
+</style>
+<script>
+    function ufnKanjiClicked(kanji, ufn) {
+        if (!kanji) kanji = "This kanji";
+        if (ufn > 0) {
+            var counts = ['0','80','250','620','1,000','2,136','2,998','4,000','13,717'];
+            $('#ufnKanjiDivCount').html(counts[ufn]);
+            $('#ufnKanjiDivKanji').html(kanji);
+            $('#ufnKanjiDivLevel').html(ufn);
+            $('#ufnKanjiDiv').show();
+            $('#ufnKanaDiv').hide();
+        } else {
+            $('#ufnKanjiDivKana').html(kanji);
+            $('#ufnKanaDiv').show();
+            $('#ufnKanjiDiv').hide();
+        }
+        show_ufn();
+    }
+</script>
+
+<div id="ufn_kanji_div" style="display:none;">
+
+  <div>The Kanshudo kanji usefulness rating shows you how useful a kanji is for you to learn.</div>
+
+  <div class="spaced" id="ufnKanjiDiv">
+    <span id="ufnKanjiDivKanji" class="emph"></span> has a Kanshudo usefulness of <span id="ufnKanjiDivLevel" class="emph"></span>, which means it is among the most useful <span id="ufnKanjiDivCount"  class="emph"></span> kanji in Japanese.
+  </div>
+
+  <div class="spaced" id="ufnKanaDiv">
+    <span id="ufnKanjiDivKana" class="emph"></span> is one of the <span class="emph">138</span> kana characters, denoted with a usefulness rating of K. The kana are the most useful characters in Japanese, and we recommend you thoroughly learn all kana before progressing to kanji.
+  </div>
+
+  <div class="spaced">All kanji in our system are rated from 1-8, where 1 is the most useful.
+    The 2136 Jōyō kanji have usefulness levels from 1 to 5, and are denoted with badges like this:&nbsp;
+    <span class="ja-ufn_1 sd"></span>
+
+  </div>
+
+  <div class="spaced">
+    The 138 kana are rated with usefulness K, and have a badge like this:&nbsp;
+    <span class="ja-ufn_K sd"></span>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var shownOnce_ufn = false;
+  var bodyOverflow_ufn;
+  var isVisible_ufn = false;
+
+  function setTitle_ufn(title) {
+      $("#w_title_ufn").html(title);
+  }
+
+  function resizer_ufn() {
+    if (!isVisible_ufn) return;
+    // console.log("Resizer ufn called");
+
+
+    sizeOverlayVarHeight($('#warning_ufn'));
+
+  }
+
+  function resizerMinWidth_ufn(minWidth) {
+    if (parseInt($('#warning_ufn').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_ufn'), minWidth);
+  }
+
+  function show_ufn() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'ufn'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_ufn called");
+    isVisible_ufn = true;
+    if (typeof(bodyOverflow_ufn) == "undefined") {
+      bodyOverflow_ufn = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+      if (!shownOnce_ufn) {
+        $('#warning_text_ufn').html('');
+        $('#ufn_kanji_div').show().appendTo('#warning_text_ufn');
+        shownOnce_ufn = true;
+      }
+
+
+
+    resizer_ufn();
+    $(window).resize(function() { resizer_ufn });
+
+    $('#warning_ufn').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_ufn').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_ufn').css({'z-index': '1002'});
+  }
+
+  function hide_ufn() {
+    $(document.body).css('overflow', bodyOverflow_ufn);
+    bodyOverflow_ufn = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_ufn').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_ufn').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'ufn'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_ufn = false;
+  }
+
+  function hide_cancel_ufn() {
+      $('#hide_ufn').hide();
+  }
+
+  function setCssClass_ufn(cssClass) {
+    $('#warning_ufn').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_ufn() {
+    if (!isVisible_ufn) return;
+
+    hide_ufn();
+  }
+
+  $(document).ready(function () {
+    $("#show_ufn").click(function() { show_ufn() });
+    $("#hide_ufn").click(function() { hide_ufn() });
+    $("#cancel_ufn").click(function() { handleOk_ufn() });
+  });
+</script>
+
+
+<div id="cover_ufn" class="cover"></div>
+<div id="warning_ufn" class="warning" style="display: none; ">
+  <a id="hide_ufn" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_ufn" style="">Kanshudo Kanji Usefulness</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_ufn">
+        
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_ufn">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+  <script>
+    function ufnVocabClicked(word, level) {
+        if (!word) word = "This word";
+        $('#ufndiv_word').html(word);
+        $('#ufndiv_level').html(level);
+        let counts = ['500','1,500','3,000','5,000','10,000','15,000','20,000','30,000','50,000','100,000','150,000','180,000'];
+        $('#ufndiv_count').html(counts[level-1]);
+        show_ufn_vocab();
+    }
+</script>
+
+<div id="ufn_vocab_div" style="display:none;">
+  <div>The Kanshudo usefulness level shows you how useful a Japanese word is for you to learn.
+    <span id="ufndiv_word" style="color:darkred;font-weight:bold;"></span> has a Kanshudo usefulness level of <span id="ufndiv_level" style="color:darkred;font-weight:bold;"></span>, which means it is among the
+    most useful <span id="ufndiv_count" style="color:darkred;font-weight:bold;"></span> words in Japanese.
+  </div>
+  <div class="spaced">All words in our system
+    are rated from 1-12, where 1 is the most useful.
+    Words with a usefulness level of 9 or better are amongst the most useful 50,000 words in Japanese, and
+    have a colored badge in search results, eg: <span class="ja-ufn_1 sd"></span></div>
+  <div class="spaced">Many useful words have multiple forms, and less common
+    forms have a badge that looks like this: <span class="ja-ufn_1 sd off"></span>
+  </div>
+  <div class="spaced">For more details on Kanshudo usefulness levels and how to use them for your studies, read our comprehensive guide,
+    <a href="/howto/usefulness">How to prioritize Japanese vocabulary to study</a>.</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var shownOnce_ufn_vocab = false;
+  var bodyOverflow_ufn_vocab;
+  var isVisible_ufn_vocab = false;
+
+  function setTitle_ufn_vocab(title) {
+      $("#w_title_ufn_vocab").html(title);
+  }
+
+  function resizer_ufn_vocab() {
+    if (!isVisible_ufn_vocab) return;
+    // console.log("Resizer ufn_vocab called");
+
+
+    sizeOverlayVarHeight($('#warning_ufn_vocab'));
+
+  }
+
+  function resizerMinWidth_ufn_vocab(minWidth) {
+    if (parseInt($('#warning_ufn_vocab').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_ufn_vocab'), minWidth);
+  }
+
+  function show_ufn_vocab() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'ufn_vocab'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_ufn_vocab called");
+    isVisible_ufn_vocab = true;
+    if (typeof(bodyOverflow_ufn_vocab) == "undefined") {
+      bodyOverflow_ufn_vocab = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+      if (!shownOnce_ufn_vocab) {
+        $('#warning_text_ufn_vocab').html('');
+        $('#ufn_vocab_div').show().appendTo('#warning_text_ufn_vocab');
+        shownOnce_ufn_vocab = true;
+      }
+
+
+
+    resizer_ufn_vocab();
+    $(window).resize(function() { resizer_ufn_vocab });
+
+    $('#warning_ufn_vocab').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_ufn_vocab').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_ufn_vocab').css({'z-index': '1002'});
+  }
+
+  function hide_ufn_vocab() {
+    $(document.body).css('overflow', bodyOverflow_ufn_vocab);
+    bodyOverflow_ufn_vocab = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_ufn_vocab').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_ufn_vocab').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'ufn_vocab'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_ufn_vocab = false;
+  }
+
+  function hide_cancel_ufn_vocab() {
+      $('#hide_ufn_vocab').hide();
+  }
+
+  function setCssClass_ufn_vocab(cssClass) {
+    $('#warning_ufn_vocab').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_ufn_vocab() {
+    if (!isVisible_ufn_vocab) return;
+
+    hide_ufn_vocab();
+  }
+
+  $(document).ready(function () {
+    $("#show_ufn_vocab").click(function() { show_ufn_vocab() });
+    $("#hide_ufn_vocab").click(function() { hide_ufn_vocab() });
+    $("#cancel_ufn_vocab").click(function() { handleOk_ufn_vocab() });
+  });
+</script>
+
+
+<div id="cover_ufn_vocab" class="cover"></div>
+<div id="warning_ufn_vocab" class="warning" style="display: none; ">
+  <a id="hide_ufn_vocab" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_ufn_vocab" style="">Kanshudo Word Usefulness</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_ufn_vocab">
+        
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_ufn_vocab">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+  <script>
+  function jlptClicked(id, level) {
+    var word = $('#jk_jk_' + id + '_fk').html();
+    if (!word) word = $('#jk_' + id).html();
+    if (!word) word = "This item";
+    $('#jlptdiv_word').html(word);
+    $('#jlptdiv_level').html(level);
+    show_jlpt();
+  }
+</script>
+
+<div id="jlpt_div" style="display:none;">
+  <div>The JLPT (Japanese Language Proficiency Test, 日本語能力試験) is the standard test of Japanese language ability for non-Japanese.
+    <span id="jlptdiv_word"></span> would first come up in level
+    <span style="color:#030e88;font-weight:bold;">N<span id="jlptdiv_level"></span></span>.
+  </div>
+
+  <div class="spaced">Kanshudo displays a badge indicating which level of the JLPT words, kanji and grammar points might first be used in:
+    <div style="margin-left:20px;" class="halfspaced">
+      <div><span class="ja-jlpt_5 sd"></span> indicates N5 (the first and easiest level)</div>
+      <div><span class="ja-jlpt_1 sd"></span> indicates N1 (the highest and most difficult)</div>
+    </div>
+  </div>
+
+  <div class="spaced">You can use Kanshudo to study for the JLPT. Kanshudo usefulness levels for kanji, words and grammar points map directly to JLPT levels, so your mastery level on Kanshudo is a direct indicator of your readiness for the JLPT exams.
+    Kanshudo usefulness counts <i>up</i> from 1, whereas the JLPT counts <i>down</i> from 5 - so the first JLPT level, N5, is equivalent to Kanshudo usefulness level <span class="ja-ufn_1 sd"></span>.
+  </div>
+
+  <div class="spaced">The JLPT vocabulary lists were compiled by Wikipedia and Tanos from past papers. Sometimes the form listed by the sources is not the most useful form. In case of doubt, we advise you to learn the Kanshudo recommended form. Words that appear in the JLPT lists in a different form are indicated with a lighter colored 'shadow' badge, like this: <span class="ja-jlpt_5 sd off"></span>.</div>
+
+  <div class="spaced">Check out our <a href="/collections/wikipedia_jlpt">84 collections of Japanese words by JLPT level</a>, or our <a href="/collections/jlpt_kanji">22 collections of kanji by JLPT level</a>.</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var shownOnce_jlpt = false;
+  var bodyOverflow_jlpt;
+  var isVisible_jlpt = false;
+
+  function setTitle_jlpt(title) {
+      $("#w_title_jlpt").html(title);
+  }
+
+  function resizer_jlpt() {
+    if (!isVisible_jlpt) return;
+    // console.log("Resizer jlpt called");
+
+
+    sizeOverlayVarHeight($('#warning_jlpt'));
+
+  }
+
+  function resizerMinWidth_jlpt(minWidth) {
+    if (parseInt($('#warning_jlpt').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_jlpt'), minWidth);
+  }
+
+  function show_jlpt() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'jlpt'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_jlpt called");
+    isVisible_jlpt = true;
+    if (typeof(bodyOverflow_jlpt) == "undefined") {
+      bodyOverflow_jlpt = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+      if (!shownOnce_jlpt) {
+        $('#warning_text_jlpt').html('');
+        $('#jlpt_div').show().appendTo('#warning_text_jlpt');
+        shownOnce_jlpt = true;
+      }
+
+
+
+    resizer_jlpt();
+    $(window).resize(function() { resizer_jlpt });
+
+    $('#warning_jlpt').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_jlpt').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_jlpt').css({'z-index': '1002'});
+  }
+
+  function hide_jlpt() {
+    $(document.body).css('overflow', bodyOverflow_jlpt);
+    bodyOverflow_jlpt = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_jlpt').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_jlpt').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'jlpt'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_jlpt = false;
+  }
+
+  function hide_cancel_jlpt() {
+      $('#hide_jlpt').hide();
+  }
+
+  function setCssClass_jlpt(cssClass) {
+    $('#warning_jlpt').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_jlpt() {
+    if (!isVisible_jlpt) return;
+
+    hide_jlpt();
+  }
+
+  $(document).ready(function () {
+    $("#show_jlpt").click(function() { show_jlpt() });
+    $("#hide_jlpt").click(function() { hide_jlpt() });
+    $("#cancel_jlpt").click(function() { handleOk_jlpt() });
+  });
+</script>
+
+
+<div id="cover_jlpt" class="cover"></div>
+<div id="warning_jlpt" class="warning" style="display: none; ">
+  <a id="hide_jlpt" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_jlpt" style="">JLPT Level</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_jlpt">
+        
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_jlpt">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+  
+
+  <div id="dpp_message" style="display:none;">
+    Each Joy o' Kanji essay provides unparalleled depth and insight into a single kanji, and is available as a beautifully presented PDF.
+
+    <div class="spaced">The essays are available as an optional part of a <a href="/pro">Kanshudo Pro subscription</a>, or can be purchased separately. Once purchased, you can download an essay immediately and any number of times in the future.</div>
+
+    <div class=spaced>Please <a href='/login'>LOG IN</a> to access Joy o' Kanji essays.</div>
+
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var shownOnce_dpp = false;
+  var bodyOverflow_dpp;
+  var isVisible_dpp = false;
+
+  function setTitle_dpp(title) {
+      $("#w_title_dpp").html(title);
+  }
+
+  function resizer_dpp() {
+    if (!isVisible_dpp) return;
+    // console.log("Resizer dpp called");
+
+
+    sizeOverlayVarHeight($('#warning_dpp'));
+
+  }
+
+  function resizerMinWidth_dpp(minWidth) {
+    if (parseInt($('#warning_dpp').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_dpp'), minWidth);
+  }
+
+  function show_dpp() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'dpp'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_dpp called");
+    isVisible_dpp = true;
+    if (typeof(bodyOverflow_dpp) == "undefined") {
+      bodyOverflow_dpp = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+      if (!shownOnce_dpp) {
+        $('#warning_text_dpp').html('');
+        $('#dpp_message').show().appendTo('#warning_text_dpp');
+        shownOnce_dpp = true;
+      }
+
+
+
+    resizer_dpp();
+    $(window).resize(function() { resizer_dpp });
+
+    $('#warning_dpp').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_dpp').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_dpp').css({'z-index': '1002'});
+  }
+
+  function hide_dpp() {
+    $(document.body).css('overflow', bodyOverflow_dpp);
+    bodyOverflow_dpp = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_dpp').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_dpp').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'dpp'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_dpp = false;
+  }
+
+  function hide_cancel_dpp() {
+      $('#hide_dpp').hide();
+  }
+
+  function setCssClass_dpp(cssClass) {
+    $('#warning_dpp').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_dpp() {
+    if (!isVisible_dpp) return;
+
+    hide_dpp();
+  }
+
+  $(document).ready(function () {
+    $("#show_dpp").click(function() { show_dpp() });
+    $("#hide_dpp").click(function() { hide_dpp() });
+    $("#cancel_dpp").click(function() { handleOk_dpp() });
+  });
+</script>
+
+
+<div id="cover_dpp" class="cover"></div>
+<div id="warning_dpp" class="warning" style="display: none; ">
+  <a id="hide_dpp" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_dpp" style="">Download / purchase JOK essays</div>
+
+  <div class="w_panel" %>
+        <div class="w_image"><img style="" src="/assets/warning-da006623977f6b24072e4b3e953ea26abe8eafcddd369fc796b742a7c9ee22b0.png" /></div>
+
+    <div class="w_text" id="warning_text_dpp">
+        
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_dpp">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+
+  
+<script>
+  function pitchClicked(id) {
+    if (id == undefined) {
+      $('#pitch_spinner').hide();
+      $('#pitch_details').html('The pitch accents applied in a full sentence are based on the pitch accent patterns of each word, modified by rules that affect word combinations and inflections.').show();
+      $('#pitch_note').show();
+      show_pitch_help();
+      return;
+    }
+    $('#pitch_spinner').show();
+    $('#pitch_details').hide();
+    $('#pitch_note').hide();
+    show_pitch_help();
+    let obj = $.ajax({url: "/pitch/pitch_details?id=" + id, type: "post"});
+    obj.success(function (data) {
+      $('#pitch_spinner').hide();
+      if (data.result === 0) {
+        $('#pitch_details').html(data.html).show();
+      } else {
+        $('#pitch_details').html("Pitch accent details not available.").show();
+      }
+      $('#pitch_note').show();
+      resizer_pitch_help();
+    });
+  }
+</script>
+
+<div id="pitch_help_div" style="display:none;">
+  <div id="pitch_spinner"><i class="fa fa-spinner fa-spin fa-fw"></i>
+    Loading pitch details ...
+  </div>
+
+  <div id="pitch_details" style="display:none;"></div>
+
+  <div id="pitch_note" style="display:none;">
+    <div class="spaced">The pitch accent markings show you how to pronounce a word. A line underneath a kana symbol indicates low pitch, and a line above indicates high pitch. A vertical line at the end indicates the pitch of the next sound in a sentence using the word is different to the last sound of the word. The number(s) to the right of the markings show how this pitch is represented in a Japanese dictionary.</div>
+
+    <div class="spaced">
+      For more information, see our comprehensive guide:
+      <div style="padding: 10px;">
+<a href="/howto/pitch" class="angled-135 stripes_small">
+  <div class="interior_small">
+    The Kanshudo definitive guide to Japanese pitch accents
+  </div>
+</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var shownOnce_pitch_help = false;
+  var bodyOverflow_pitch_help;
+  var isVisible_pitch_help = false;
+
+  function setTitle_pitch_help(title) {
+      $("#w_title_pitch_help").html(title);
+  }
+
+  function resizer_pitch_help() {
+    if (!isVisible_pitch_help) return;
+    // console.log("Resizer pitch_help called");
+
+
+    sizeOverlayVarHeight($('#warning_pitch_help'));
+
+  }
+
+  function resizerMinWidth_pitch_help(minWidth) {
+    if (parseInt($('#warning_pitch_help').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_pitch_help'), minWidth);
+  }
+
+  function show_pitch_help() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'pitch_help'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_pitch_help called");
+    isVisible_pitch_help = true;
+    if (typeof(bodyOverflow_pitch_help) == "undefined") {
+      bodyOverflow_pitch_help = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+      if (!shownOnce_pitch_help) {
+        $('#warning_text_pitch_help').html('');
+        $('#pitch_help_div').show().appendTo('#warning_text_pitch_help');
+        shownOnce_pitch_help = true;
+      }
+
+
+
+    resizer_pitch_help();
+    $(window).resize(function() { resizer_pitch_help });
+
+    $('#warning_pitch_help').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_pitch_help').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_pitch_help').css({'z-index': '1002'});
+  }
+
+  function hide_pitch_help() {
+    $(document.body).css('overflow', bodyOverflow_pitch_help);
+    bodyOverflow_pitch_help = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_pitch_help').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_pitch_help').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'pitch_help'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_pitch_help = false;
+  }
+
+  function hide_cancel_pitch_help() {
+      $('#hide_pitch_help').hide();
+  }
+
+  function setCssClass_pitch_help(cssClass) {
+    $('#warning_pitch_help').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_pitch_help() {
+    if (!isVisible_pitch_help) return;
+
+    hide_pitch_help();
+  }
+
+  $(document).ready(function () {
+    $("#show_pitch_help").click(function() { show_pitch_help() });
+    $("#hide_pitch_help").click(function() { hide_pitch_help() });
+    $("#cancel_pitch_help").click(function() { handleOk_pitch_help() });
+  });
+</script>
+
+
+<div id="cover_pitch_help" class="cover"></div>
+<div id="warning_pitch_help" class="warning" style="display: none; ">
+  <a id="hide_pitch_help" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_pitch_help" style="">Japanese pitch accents</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_pitch_help">
+        
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_pitch_help">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var bodyOverflow_favorites_warning;
+  var isVisible_favorites_warning = false;
+
+  function setTitle_favorites_warning(title) {
+      $("#w_title_favorites_warning").html(title);
+  }
+
+  function resizer_favorites_warning() {
+    if (!isVisible_favorites_warning) return;
+    // console.log("Resizer favorites_warning called");
+
+
+    sizeOverlayVarHeight($('#warning_favorites_warning'));
+
+  }
+
+  function resizerMinWidth_favorites_warning(minWidth) {
+    if (parseInt($('#warning_favorites_warning').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_favorites_warning'), minWidth);
+  }
+
+  function show_favorites_warning() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'favorites_warning'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_favorites_warning called");
+    isVisible_favorites_warning = true;
+    if (typeof(bodyOverflow_favorites_warning) == "undefined") {
+      bodyOverflow_favorites_warning = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+
+
+    resizer_favorites_warning();
+    $(window).resize(function() { resizer_favorites_warning });
+
+    $('#warning_favorites_warning').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_favorites_warning').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_favorites_warning').css({'z-index': '1002'});
+  }
+
+  function hide_favorites_warning() {
+    $(document.body).css('overflow', bodyOverflow_favorites_warning);
+    bodyOverflow_favorites_warning = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_favorites_warning').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_favorites_warning').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'favorites_warning'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_favorites_warning = false;
+  }
+
+  function hide_cancel_favorites_warning() {
+      $('#hide_favorites_warning').hide();
+  }
+
+  function setCssClass_favorites_warning(cssClass) {
+    $('#warning_favorites_warning').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_favorites_warning() {
+    if (!isVisible_favorites_warning) return;
+
+    hide_favorites_warning();
+  }
+
+  $(document).ready(function () {
+    $("#show_favorites_warning").click(function() { show_favorites_warning() });
+    $("#hide_favorites_warning").click(function() { hide_favorites_warning() });
+    $("#cancel_favorites_warning").click(function() { handleOk_favorites_warning() });
+  });
+</script>
+
+
+<div id="cover_favorites_warning" class="cover"></div>
+<div id="warning_favorites_warning" class="warning" style="display: none; ">
+  <a id="hide_favorites_warning" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_favorites_warning" style="">Favorites</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_favorites_warning">
+        Please <a href='/users/sign_in'>LOG IN</a> to use
+                        Favorites.<br /><br />
+                        Wherever you see the <span class='ja-star_open sd'></span> green star,
+                        you can tag any kanji, word or grammar point for future reference in your
+                        <a href='/favorites'>Favorites</a> list, which is accessible from the main menu.
+                         You can automatically create <a href='/srs'>flashcards</a> from your Favorites,
+                         or use <a href='/quick'>Quick Study</a> to study them any time.
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_favorites_warning">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<script>
+  var footerZ = 0;
+  var bodyOverflow_flashcard_warning;
+  var isVisible_flashcard_warning = false;
+
+  function setTitle_flashcard_warning(title) {
+      $("#w_title_flashcard_warning").html(title);
+  }
+
+  function resizer_flashcard_warning() {
+    if (!isVisible_flashcard_warning) return;
+    // console.log("Resizer flashcard_warning called");
+
+
+    sizeOverlayVarHeight($('#warning_flashcard_warning'));
+
+  }
+
+  function resizerMinWidth_flashcard_warning(minWidth) {
+    if (parseInt($('#warning_flashcard_warning').css('opacity')) === 0) return;
+    sizeOverlayVarHeightMinWidth($('#warning_flashcard_warning'), minWidth);
+  }
+
+  function show_flashcard_warning() {
+    let statusEvent = new CustomEvent('warning_showing', {'detail': {id: 'flashcard_warning'}});
+    document.body.dispatchEvent(statusEvent);
+
+    //console.log("show_flashcard_warning called");
+    isVisible_flashcard_warning = true;
+    if (typeof(bodyOverflow_flashcard_warning) == "undefined") {
+      bodyOverflow_flashcard_warning = $(document.body).css('overflow');
+      $(document.body).css('overflow', 'hidden');
+    }
+    footerZ = $('#footer').css('z-index');
+    $('#footer').css('z-index', -1);
+    $('#credits').css('z-index', -1);
+
+    $('#main-content').css('position', 'static');
+
+
+
+    resizer_flashcard_warning();
+    $(window).resize(function() { resizer_flashcard_warning });
+
+    $('#warning_flashcard_warning').css({'opacity': '1', 'z-index': '1001'});
+    $('#cover_flashcard_warning').css({'opacity': '1','z-index': '1000'}).fadeIn(500);
+    $('#cancel_flashcard_warning').css({'z-index': '1002'});
+  }
+
+  function hide_flashcard_warning() {
+    $(document.body).css('overflow', bodyOverflow_flashcard_warning);
+    bodyOverflow_flashcard_warning = undefined;
+    $('#footer').css('z-index', footerZ);
+
+    $('#main-content').css('position', 'relative');
+
+    $('#warning_flashcard_warning').css({'opacity': '0', 'display': 'none', 'top': $(window).height()});
+    $(window).off("resize");
+    $('#cover_flashcard_warning').css({'display': 'none'});
+
+    let statusEvent = new CustomEvent('warning_hidden', {'detail': {id: 'flashcard_warning'}});
+    document.body.dispatchEvent(statusEvent);
+
+    isVisible_flashcard_warning = false;
+  }
+
+  function hide_cancel_flashcard_warning() {
+      $('#hide_flashcard_warning').hide();
+  }
+
+  function setCssClass_flashcard_warning(cssClass) {
+    $('#warning_flashcard_warning').attr('class','').addClass(cssClass);
+  }
+
+  function handleOk_flashcard_warning() {
+    if (!isVisible_flashcard_warning) return;
+
+    hide_flashcard_warning();
+  }
+
+  $(document).ready(function () {
+    $("#show_flashcard_warning").click(function() { show_flashcard_warning() });
+    $("#hide_flashcard_warning").click(function() { hide_flashcard_warning() });
+    $("#cancel_flashcard_warning").click(function() { handleOk_flashcard_warning() });
+  });
+</script>
+
+
+<div id="cover_flashcard_warning" class="cover"></div>
+<div id="warning_flashcard_warning" class="warning" style="display: none; ">
+  <a id="hide_flashcard_warning" class="x-hide">&times;</a>
+
+      <div class="w_title" id="w_title_flashcard_warning" style="">Flashcards</div>
+
+  <div class="w_panel" %>
+
+    <div class="w_text" id="warning_text_flashcard_warning">
+        Please <a href='/users/sign_in'>LOG IN</a> to use
+                        Flashcards.<br /><br />
+                        Wherever you see the <span class='ja-flashcards sd'></span> flashcard icon,
+                        you can automatically create a new flashcard or view flashcard status.
+                        Flashcards can be created for any kanji, word, grammar point or example sentence on Kanshudo.
+    </div>
+  </div>
+
+  <div class="spaced" style="display:flex;justify-content: flex-end;">
+    <div class="linkbuttondiv large" id="cancel_flashcard_warning">OK</div>
+  </div>
+
+  <div style="clear:both;">&nbsp;</div>
+</div>
+
+</body>
+</html>

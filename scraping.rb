@@ -1,3 +1,4 @@
+require 'csv'
 require 'nokogiri'
 
 doc = File.open("output.html") { |file| Nokogiri::HTML(file) }
@@ -45,6 +46,9 @@ all_tatoeba.each do |tatoeba|
 	end
 end
 
-# change a line after either "。" or "」"
-
-puts japanese_sentence.join.split(/(?<=[。」])/).join("\n")
+# change a line after either "。" or "」"　and download to csv file line by line
+CSV.open('output_食.csv', "wb") do |csv|
+  japanese_sentence.join.split(/(?<=[。」])/).each do |line|
+    csv << [line.strip]
+  end
+end
